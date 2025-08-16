@@ -118,5 +118,69 @@ nav {
   .menu.show { display: flex; }  /* Show menu when toggled */
   .menu-toggle { display: block; }
 }
+/* Navbar */
+nav {
+  background: #f8e9e9;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo { 
+  font-weight: 800; 
+  color: #5b1a3a; 
+  font-size: 20px;
+}
+
+/* Hide menu links by default */
+.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 10px;
+  z-index: 100;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px;
+}
+
+.menu a:hover {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+/* Three-dot button */
+.menu-toggle {
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+  padding: 5px 10px;
+}
+
+/* Desktop: show links normally */
+@media (min-width: 768px) {
+  .menu {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  .menu a { padding: 0 10px; }
+  .menu-toggle { display: none; }
+}
+
 
 
