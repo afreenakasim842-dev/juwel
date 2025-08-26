@@ -227,6 +227,27 @@ nav {
   .menu a { padding: 0 10px; }
   .menu-toggle { display: none; }
 }
+.products { padding: 30px; text-align: center; }
+.products h1 { font-size: 28px; margin-bottom: 20px; color: #5b1a3a; }
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+  padding: 14px;
+  transition: transform .2s ease;
+}
+.product-card:hover { transform: translateY(-4px); }
+.product-card img { border-radius: 8px; max-width: 100%; height: auto; }
+.product-card h3 { margin: 10px 0 4px; font-size: 18px; }
+.product-card p { margin: 0; color: #666; }
+
 
 
 
